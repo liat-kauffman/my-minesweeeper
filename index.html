@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minesweeper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+    
+    <h1>MINESWEEPER</h1>
+    
+<div>
+  
+  <button class="restart-btn" onclick="restart()"><span>🙂</span></button> <div class="timer-container"> 
+</div>
+      <span class="timer">00:00:00</span> 
+    </div>
+
+ <div>
+
+   <table >
+     <tbody class="board">
+       
+    </tbody>
+  </table>
+  
+</div>
+<h3 class="lives"></h3>
+<div>
+  <p>
+   <button class="level beginner" onclick="updateLevel(this)">beginner</button>
+   <button class="level intermediate" onclick="updateLevel(this)">intermediate</button>
+   <button class="level expert" onclick="updateLevel(this)">expert</button>
+  </p>
+</div>
+
+
+<h2><span class="msg"></span></h2>
+
+
+
+    <script src="js/game.js"></script>
+    
+
+</body>
+</html>
